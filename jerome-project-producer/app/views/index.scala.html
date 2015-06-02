@@ -1,0 +1,13 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+    <h1> Enter the person's name and they will appear elsewhere! </h1>
+    <form method="POST" action="@routes.Application.sendPerson()">
+        <input type="text" name="full_name" />
+        <button>New Person</button>
+    </form>
+
+    @message
+
+}
